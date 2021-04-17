@@ -25,6 +25,7 @@ jobs:
       - uses: tokusumi/markdown-embed-code@main
         with:
           markdown: "README.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Changelog
         id: changelog
         uses: nuuday/github-changelog-action@v1.0.0
