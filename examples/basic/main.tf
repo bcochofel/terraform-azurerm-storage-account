@@ -8,6 +8,10 @@ module "rg" {
 
   name     = "rg-storage-basic-example"
   location = "North Europe"
+
+  tags = {
+    ManagedBy = "Terraform"
+  }
 }
 
 module "st" {
